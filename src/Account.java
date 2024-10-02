@@ -25,7 +25,7 @@ public class Account {
     return getAnnualInterestRate();
     }
     public Date getDateCreated(){
-    return dateCraated;
+    return dateCreated;
     }
     public void setID(int id){
     this.id = id;
@@ -36,7 +36,7 @@ public class Account {
     public double getMonthlyInterest(){
     return balance * (annualInterestRate / 1200);
     }
-    public void withdraw(double amont){
+    public void withdraw(double amount){
     balance -= amount;
     }
 }
