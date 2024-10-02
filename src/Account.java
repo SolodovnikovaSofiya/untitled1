@@ -14,7 +14,6 @@ public class Account {
             this.balance = balance;
             dateCreated = new Date();
         }
-    }
 
     public int getID(){
     return id;
@@ -22,4 +21,23 @@ public class Account {
     public double getBalance(){
     return balance;
     }
+    public static double getAnnualInterestRate(){
+    return getAnnualInterestRate();
+    }
+    public Date getDateCreated(){
+    return dateCraated;
+    }
+    public void setID(int id){
+    this.id = id;
+    }
+    public static void setAnnualInterestRate(double annualInterestRate){
+    Account.annualInterestRate = annualInterestRate;
+    }
+    public double getMonthlyInterest(){
+    return balance * (annualInterestRate / 1200);
+    }
+    public void withdraw(double amont){
+    balance -= amount;
+    }
+}
 
